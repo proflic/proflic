@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFLIC Technologies | Industrial Metrology & Precision CMM Inspection</title>
+  <meta name="description" content="PROFLIC Technologies delivers precision industrial metrology, CMM offline programming, high-density 3D blue laser scanning, ASME Y14.5 GD&T verification, and reverse engineering services. Trusted in every measurement.">
+  <meta name="keywords" content="Industrial Metrology, CMM Inspection, 3D Laser Scanning, CMM Programming, PC-DMIS, PolyWorks, GD&T, ASME Y14.5, Reverse Engineering, Dimensional Inspection, Quality Assurance">
+  <meta name="author" content="PROFLIC Technologies">
+  <link rel="canonical" href="https://proflictech.com/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://proflictech.com/">
+  <meta property="og:title" content="PROFLIC Technologies | Industrial Metrology & Precision CMM Inspection">
+  <meta property="og:description" content="We reveal the invisible, measured everything in microns. Advanced CMM programming, 3D laser scanning, and dimensional verification.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#0052FF',
+              accent: '#00C8FF',
+              navy: '#080E1A',
+              card: '#0D1629',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts: Outfit (Headings), Inter (Body), JetBrains Mono (Technical/DRO) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "PROFLIC Technologies",
+    "slogan": "Trusted in Every Measurement",
+    "description": "Industrial Metrology, Precision Engineering, CMM Inspection, 3D Laser Scanning, CAD, GD&T, Reverse Engineering and Quality Assurance.",
+    "telephone": "+918459706344",
+    "email": "proflic.tech@gmail.com",
+    "url": "https://proflictech.com",
+    "logo": "https://proflictech.com/assets/logo.png",
+    "priceRange": "$$",
+    "knowsAbout": [
+      "Coordinate Measuring Machine (CMM)",
+      "3D Laser Scanning",
+      "PC-DMIS Offline Programming",
+      "PolyWorks Metrology",
+      "ASME Y14.5 GD&T Standards",
+      "First Article Inspection Reports (FAIR)",
+      "Reverse Engineering CAD"
+    ]
+  }
+  </script>
+</head>
+<body class="blueprint-bg antialiased selection:bg-[#0052FF] selection:text-white">
+
+  <!-- 1. NAVIGATION / APP BAR (Clean Single Horizontal Line) -->
+  <header id="siteHeader" class="site-header fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- App Bar Logo (Clean Visual Anchor) -->
+      <a href="#hero" class="flex items-center group focus:outline-none" aria-label="PROFLIC Technologies Home">
+        <img src="assets/logo.png" alt="PROFLIC Technologies" class="h-9 sm:h-10 w-auto object-contain transition-transform duration-200 group-hover:opacity-90">
+      </a>
+
+      <!-- Desktop Navigation Links (Clean Single Row) -->
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium" aria-label="Main Navigation">
+        <a href="#hero" class="text-slate-300 hover:text-white transition-colors">Home</a>
+        <a href="#about" class="text-slate-300 hover:text-white transition-colors">About</a>
+        <a href="#services" class="text-slate-300 hover:text-white transition-colors">Services</a>
+        <a href="#simulation" class="text-slate-300 hover:text-white transition-colors">3D Scanner</a>
+        <a href="#software" class="text-slate-300 hover:text-white transition-colors">Software</a>
+        <a href="#estimator" class="text-slate-300 hover:text-white transition-colors">Calculator</a>
+      </nav>
+
+      <!-- Desktop Actions: Call + Theme Toggle + Dominant Request Quote CTA -->
+      <div class="hidden lg:flex items-center gap-5">
+        <!-- Secondary Contact: Call -->
+        <a href="tel:+918459706344" class="text-xs font-mono text-slate-300 hover:text-white transition-colors flex items-center gap-2" title="Call PROFLIC Engineering Team">
+          <i class="fa-solid fa-phone text-xs text-blue-500"></i>
+          <span>Call</span>
+        </a>
+
+        <!-- Minimal Theme Switch Icon -->
+        <button class="theme-toggle-btn p-1.5 rounded-lg text-slate-400 hover:text-white transition-colors focus:outline-none" aria-label="Toggle Dark / Light Theme" title="Toggle Blueprint Theme">
+          <i class="fa-solid fa-sun text-sm theme-icon"></i>
+        </button>
+
+        <!-- Dominant Request Quote CTA Button -->
+        <a href="#contact" class="px-5 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-sm">
+          Request a Quote
+        </a>
+      </div>
+
+      <!-- Mobile Controls: Theme Toggle & Hamburger Menu -->
+      <div class="flex items-center gap-3 lg:hidden">
+        <button class="theme-toggle-btn p-1.5 text-slate-400 hover:text-white" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun theme-icon"></i>
+        </button>
+        <button id="mobileMenuBtn" class="p-1.5 text-slate-300 hover:text-white focus:outline-none" aria-expanded="false" aria-label="Toggle Navigation Menu">
+          <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobileMenu" class="hidden lg:hidden flex-col gap-4 mt-4 pt-4 border-t border-slate-800 px-2 pb-4">
+      <a href="#hero" class="mobile-nav-link text-slate-200 hover:text-white py-1.5 text-base font-medium">Home</a>
+      <a href="#about" class="mobile-nav-link text-slate-200 hover:text-white py-1.5 text-base font-medium">About</a>
+      <a href="#services" class="mobile-nav-link text-slate-200 hover:text-white py-1.5 text-base font-medium">Services</a>
+      <a href="#simulation" class="mobile-nav-link text-slate-200 hover:text-white py-1.5 text-base font-medium">3D Scanner</a>
+      <a href="#software" class="mobile-nav-link text-slate-200 hover:text-white py-1.5 text-base font-medium">Software</a>
+      <a href="#estimator" class="mobile-nav-link text-slate-200 hover:text-white py-1.5 text-base font-medium">Calculator</a>
+      <div class="pt-3 border-t border-slate-800 flex flex-col gap-2.5">
+        <a href="tel:+918459706344" class="py-2.5 text-center bg-slate-800 text-slate-200 font-mono text-xs rounded-lg flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-xs"></i> Call +91 84597 06344
+        </a>
+        <a href="#contact" class="py-3 text-center bg-blue-600 text-white font-heading font-semibold text-sm rounded-lg">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (Clean, Minimal, Generous Whitespace, One Coherent 3D Visual) -->
+  <section id="hero" class="relative min-h-[88vh] pt-32 pb-20 flex items-center overflow-hidden">
+    
+    <!-- Background Canvas Layer (Renders 3D CAD Impeller on the right, calm breathing motion) -->
+    <canvas id="heroCanvas" class="absolute inset-0 w-full h-full z-0 pointer-events-auto opacity-80"></canvas>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left / Primary Content (Clean, Confident, Strong Hierarchy) -->
+        <div class="lg:col-span-7">
+          
+          <!-- Small Eyebrow -->
+          <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-4">
+            INDUSTRIAL METROLOGY • PRECISION ENGINEERING
+          </div>
+
+          <!-- Main Headline (Fluid natural wrapping, no rigid line breaks) -->
+          <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] mb-6 max-w-2xl">
+            TRUSTED IN EVERY <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-400">MEASUREMENT</span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="text-slate-300 text-base sm:text-lg lg:text-xl font-normal max-w-xl mb-8 leading-relaxed font-sans">
+            We reveal the invisible, measured everything in microns.
+          </p>
+
+          <!-- Clean CTAs -->
+          <div class="flex flex-col sm:flex-row items-center gap-4">
+            <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-lg font-heading font-semibold text-sm text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-sm flex items-center justify-center gap-2">
+              <span>Request a Quote</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#services" class="w-full sm:w-auto px-7 py-3.5 rounded-lg font-heading font-medium text-sm text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 transition-all flex items-center justify-center">
+              Explore Services
+            </a>
+          </div>
+
+          <!-- Subtle Single Technical Note (No visual clutter) -->
+          <div class="mt-10 text-xs font-mono text-slate-400 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            <span>ASME Y14.5 & ISO 1101 GD&T Framework • Sub-Micron Resolution</span>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Clean Focal Space for 3D CAD Visualization -->
+        <div class="hidden lg:block lg:col-span-5 pointer-events-none">
+          <!-- The interactive 3D geometry rendered by hero-canvas.js occupies this space -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PRECISION METRICS SECTION (Clean Open Horizontal Presentation) -->
+  <section id="metrics" class="py-12 border-t border-b border-slate-800 bg-slate-900/20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div>
+          <div id="metric-programs" class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-1.5">1,000+</div>
+          <div class="font-sans text-xs sm:text-sm font-medium text-slate-400">CMM Programs Created</div>
+        </div>
+
+        <div>
+          <div class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-500 tracking-tight mb-1.5">&lt; 0.029 mm</div>
+          <div class="font-sans text-xs sm:text-sm font-medium text-slate-400">Micrometric Accuracy</div>
+        </div>
+
+        <div>
+          <div class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-1.5">24/7</div>
+          <div class="font-sans text-xs sm:text-sm font-medium text-slate-400">On-Site Metrology Support</div>
+        </div>
+
+        <div>
+          <div id="metric-gdt" class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-emerald-400 tracking-tight mb-1.5">100%</div>
+          <div class="font-sans text-xs sm:text-sm font-medium text-slate-400">GD&T Verified &amp; Compliant</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ABOUT SECTION & LIVE CAD VISUALIZER (Open Composition, No Nested Card Clutter) -->
+  <section id="about" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- Left: About Narrative -->
+        <div class="lg:col-span-6">
+          <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-3">
+            ABOUT PROFLIC TECHNOLOGIES
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            Engineering Precision at the Micron Scale
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed mb-6 font-normal font-sans">
+            <strong class="text-white font-semibold">PROFLIC Technologies</strong> is an advanced industrial metrology and precision quality engineering firm. We bridge the gap between physical manufacturing and digital CAD data using tactile coordinate measuring machines, high-speed 3D laser scanners, and dedicated offline programming software.
+          </p>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8 font-sans">
+            Whether verifying critical aerospace castings, automotive dies, or medical components, our engineers deliver actionable GD&T inspection reports and turnkey offline CMM routines in <span class="text-white font-medium">PC-DMIS</span> and <span class="text-white font-medium">PolyWorks</span>.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 text-xs sm:text-sm font-sans text-slate-300 border-t border-slate-800 pt-6">
+            <div>
+              <span class="text-white font-semibold block mb-0.5">• CMM Offline DCC</span>
+              <span class="text-slate-400 text-xs">Collision-free automated scripts</span>
+            </div>
+            <div>
+              <span class="text-white font-semibold block mb-0.5">• 3D Laser Scanning</span>
+              <span class="text-slate-400 text-xs">High-density surface point clouds</span>
+            </div>
+            <div>
+              <span class="text-white font-semibold block mb-0.5">• Reverse Engineering</span>
+              <span class="text-slate-400 text-xs">Parametric STEP &amp; native NX/CAD</span>
+            </div>
+            <div>
+              <span class="text-white font-semibold block mb-0.5">• Quality Assurance</span>
+              <span class="text-slate-400 text-xs">FAIR AS9102 &amp; PPAP reports</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Live CAD / XYZ Visualizer (Clean Viewport) -->
+        <div class="lg:col-span-6">
+          <div class="metrology-panel p-5 border border-slate-800">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400 pb-3 border-b border-slate-800 mb-3">
+              <span>CAD_VERIFY_VIEWPORT</span>
+              <span class="text-blue-500 font-semibold">LIVE DRO</span>
+            </div>
+
+            <div class="h-64 rounded-lg bg-black/80 flex items-center justify-center relative overflow-hidden">
+              <canvas id="cadVisualizerCanvas" class="w-full h-full cursor-crosshair"></canvas>
+            </div>
+
+            <div class="mt-4 p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
+              <div class="text-[10px] font-mono text-slate-400 mb-1.5 flex items-center justify-between">
+                <span>ACTIVE PROBING TARGET</span>
+                <span class="text-blue-400 font-bold">±0.010 mm</span>
+              </div>
+              <div id="cadCoordReadout" class="font-mono text-xs sm:text-sm font-semibold text-white tracking-wider">
+                X 125.483 mm   Y 48.201 mm   Z 12.904 mm   DEV +0.008 mm
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. METROLOGY WORKFLOW SECTION (Simplified Linear Presentation) -->
+  <section id="workflow" class="py-20 border-t border-slate-800 bg-slate-900/20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="max-w-2xl mb-12">
+        <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
+          INSPECTION PIPELINE
+        </div>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-3">
+          Metrology Workflow
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-sans">
+          A seamless path from 3D nominal geometry to formal audit-ready inspection reports.
+        </p>
+      </div>
+
+      <!-- Linear Stages Row -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
+        
+        <button class="workflow-stage-btn active p-3 rounded-lg text-left border border-blue-500 bg-blue-500/10 transition-all focus:outline-none" data-step="0">
+          <div class="text-[10px] font-mono text-blue-400 font-bold mb-0.5">01</div>
+          <div class="font-heading text-xs sm:text-sm font-semibold text-white">CAD Model</div>
+        </button>
+
+        <button class="workflow-stage-btn p-3 rounded-lg text-left border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition-all focus:outline-none" data-step="1">
+          <div class="text-[10px] font-mono text-slate-400 font-bold mb-0.5">02</div>
+          <div class="font-heading text-xs sm:text-sm font-semibold text-white">Measurement</div>
+        </button>
+
+        <button class="workflow-stage-btn p-3 rounded-lg text-left border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition-all focus:outline-none" data-step="2">
+          <div class="text-[10px] font-mono text-slate-400 font-bold mb-0.5">03</div>
+          <div class="font-heading text-xs sm:text-sm font-semibold text-white">3D Scanning</div>
+        </button>
+
+        <button class="workflow-stage-btn p-3 rounded-lg text-left border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition-all focus:outline-none" data-step="3">
+          <div class="text-[10px] font-mono text-slate-400 font-bold mb-0.5">04</div>
+          <div class="font-heading text-xs sm:text-sm font-semibold text-white">Analysis</div>
+        </button>
+
+        <button class="workflow-stage-btn p-3 rounded-lg text-left border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition-all focus:outline-none" data-step="4">
+          <div class="text-[10px] font-mono text-slate-400 font-bold mb-0.5">05</div>
+          <div class="font-heading text-xs sm:text-sm font-semibold text-white">GD&amp;T Verify</div>
+        </button>
+
+        <button class="workflow-stage-btn p-3 rounded-lg text-left border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition-all focus:outline-none" data-step="5">
+          <div class="text-[10px] font-mono text-slate-400 font-bold mb-0.5">06</div>
+          <div class="font-heading text-xs sm:text-sm font-semibold text-white">Report</div>
+        </button>
+
+      </div>
+
+      <!-- Active Stage Technical Summary (Clean, Concise) -->
+      <div id="workflowDetailContainer" class="p-6 rounded-xl border border-slate-800 bg-slate-900/40">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3 mb-3">
+          <div class="flex items-center gap-2">
+            <span id="workflowDetailBadge" class="text-[10px] font-mono px-2.5 py-0.5 rounded bg-blue-500/20 text-blue-400 font-bold">INPUT STAGE</span>
+            <h3 id="workflowDetailTitle" class="font-heading text-lg sm:text-xl font-bold text-white">1. CAD Model &amp; Blueprint Analysis</h3>
+          </div>
+          <div class="text-xs font-mono text-slate-400">ASME Y14.5 / ISO 1101</div>
+        </div>
+        <p id="workflowDetailDesc" class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4 font-sans font-normal">
+          Import nominal 3D CAD data (STEP, IGES, CATIA, NX) and analyze 2D engineering drawings for GD&amp;T datum reference frames, critical tolerances, and MMC/LMC modifiers.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-slate-400">
+          <div><strong class="text-white font-medium">Parameters:</strong> <span id="workflowDetailParams" class="text-slate-300">Datum Alignment: [A|B|C] • Tolerance: ±0.010 mm</span></div>
+          <div><strong class="text-white font-medium">Software:</strong> <span id="workflowDetailEquipment" class="text-slate-300">Siemens NX / CATIA / SolidWorks</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. SERVICES SECTION (Clean Product Card Structure: Visual -> Name -> Description -> Explore) -->
+  <section id="services" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl">
+          <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
+            PRECISION SERVICES
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3">
+            Engineering Capabilities &amp; Services
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-sans">
+            Turnkey shop-floor inspection, high-speed 3D blue laser scanning, and DCC offline CMM programming.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap gap-2">
+          <button class="service-filter-btn active px-3.5 py-1.5 rounded-lg font-mono text-xs font-medium bg-blue-600 text-white transition-all" data-filter="all">All</button>
+          <button class="service-filter-btn px-3.5 py-1.5 rounded-lg font-mono text-xs font-medium border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="inspection">Inspection</button>
+          <button class="service-filter-btn px-3.5 py-1.5 rounded-lg font-mono text-xs font-medium border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="programming">CMM Scripting</button>
+          <button class="service-filter-btn px-3.5 py-1.5 rounded-lg font-mono text-xs font-medium border border-slate-800 text-slate-400 hover:text-white transition-all" data-filter="cad">CAD / Reverse</button>
+        </div>
+      </div>
+
+      <!-- Services Grid (Clean, Decluttered Product Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Service 1: On-Site CMM Inspection -->
+        <div class="service-card metrology-panel metrology-panel-hover p-6 flex flex-col justify-between" data-category="inspection">
+          <div>
+            <div class="h-20 w-full mb-5 rounded-lg bg-black/40 border border-slate-800 flex items-center justify-center p-2 overflow-hidden">
+              <svg class="w-full h-full text-blue-500" viewBox="0 0 200 60" fill="none">
+                <circle cx="30" cy="48" r="7" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2,2"/>
+                <circle cx="30" cy="48" r="2.5" fill="currentColor"/>
+                <line x1="30" y1="48" x2="75" y2="18" stroke="#0052FF" stroke-width="2"/>
+                <circle cx="75" cy="18" r="4" fill="#080E1A" stroke="#0052FF" stroke-width="1.5"/>
+                <line x1="75" y1="18" x2="135" y2="35" stroke="#0052FF" stroke-width="1.8"/>
+                <circle cx="135" cy="35" r="3.5" fill="#080E1A" stroke="#0052FF" stroke-width="1.5"/>
+                <line x1="135" y1="35" x2="165" y2="48" stroke="#00C8FF" stroke-width="1.5"/>
+                <circle cx="165" cy="48" r="3" fill="#DC2626"/>
+                <text x="80" y="55" fill="#64748B" font-family="JetBrains Mono" font-size="8">7-AXIS ARTICULATION ARM</text>
+              </svg>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">On-Site CMM Inspection</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-sans font-normal">
+              Portable articulation arms deployed directly to your machine shop floor for in-situ verification without part transit risk.
+            </p>
+          </div>
+          <button class="open-spec-btn text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="onsite">
+            <span>Explore Service</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 2: 3D Scanning & Probe-Based Inspection -->
+        <div class="service-card metrology-panel metrology-panel-hover p-6 flex flex-col justify-between" data-category="inspection">
+          <div>
+            <div class="h-20 w-full mb-5 rounded-lg bg-black/40 border border-slate-800 flex items-center justify-center p-2 overflow-hidden">
+              <svg class="w-full h-full text-blue-500" viewBox="0 0 200 60" fill="none">
+                <path d="M 20,45 Q 60,15 100,40 T 180,28" stroke="rgba(0, 82, 255, 0.4)" stroke-width="1.5" stroke-dasharray="3,3"/>
+                <polygon points="100,8 75,45 125,45" fill="rgba(0, 82, 255, 0.1)" stroke="rgba(0, 82, 255, 0.5)" stroke-width="1"/>
+                <line x1="70" y1="45" x2="130" y2="45" stroke="#00C8FF" stroke-width="1.8"/>
+                <circle cx="75" cy="44" r="1.5" fill="#10B981"/>
+                <circle cx="92" cy="40" r="1.5" fill="#00C8FF"/>
+                <circle cx="110" cy="41" r="1.5" fill="#10B981"/>
+                <text x="45" y="56" fill="#64748B" font-family="JetBrains Mono" font-size="8">BLUE LASER • 2,000,000 PTS/SEC</text>
+              </svg>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">3D Scanning &amp; Inspection</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-sans font-normal">
+              High-density blue laser optical scanning combined with touch probing for full surface deviation heatmaps and hole tolerances.
+            </p>
+          </div>
+          <button class="open-spec-btn text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="scanning">
+            <span>Explore Service</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 3: CMM Programming Training -->
+        <div class="service-card metrology-panel metrology-panel-hover p-6 flex flex-col justify-between" data-category="programming">
+          <div>
+            <div class="h-20 w-full mb-5 rounded-lg bg-black/50 border border-slate-800 p-2.5 font-mono text-[9px] text-slate-400 overflow-hidden flex flex-col justify-center">
+              <div class="text-blue-400 font-bold mb-0.5">// PC-DMIS ROUTINE</div>
+              <div class="text-emerald-400">F(CIR1) = FEAT/CIRCLE,CART,0,0,0,0,0,1,28.00</div>
+              <div class="text-slate-300">MEAS/CIRCLE,CIR1,4 $ TOUCH 4-HITS</div>
+              <div class="text-cyan-400">GOTO/125.483, 48.201, +40.000</div>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">CMM Programming Training</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-sans font-normal">
+              Hands-on corporate industrial training for quality engineers on PC-DMIS and PolyWorks offline scripting and GD&amp;T logic.
+            </p>
+          </div>
+          <button class="open-spec-btn text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="training">
+            <span>Explore Service</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 4: Reverse Engineering & 3D Modelling -->
+        <div class="service-card metrology-panel metrology-panel-hover p-6 flex flex-col justify-between" data-category="cad">
+          <div>
+            <div class="h-20 w-full mb-5 rounded-lg bg-black/40 border border-slate-800 flex items-center justify-center p-2 overflow-hidden">
+              <svg class="w-full h-full text-blue-500" viewBox="0 0 200 60" fill="none">
+                <polygon points="25,45 45,18 55,50" stroke="#0052FF" stroke-width="1.2" fill="rgba(0, 82, 255, 0.1)"/>
+                <polygon points="45,18 75,22 55,50" stroke="#00C8FF" stroke-width="1.2" fill="rgba(0, 200, 255, 0.1)"/>
+                <line x1="94" y1="35" x2="114" y2="35" stroke="#0052FF" stroke-width="1.8"/>
+                <polygon points="114,31 122,35 114,39" fill="#0052FF"/>
+                <rect x="130" y="18" width="42" height="30" rx="3" stroke="#00C8FF" stroke-width="1.5" fill="rgba(0, 200, 255, 0.1)"/>
+                <text x="45" y="56" fill="#64748B" font-family="JetBrains Mono" font-size="8">MESH &gt;&gt; PARAMETRIC STEP/NX</text>
+              </svg>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Reverse Engineering &amp; CAD</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-sans font-normal">
+              Transforming raw point clouds and STL mesh scans into fully editable parametric STEP, IGES, SolidWorks, and Siemens NX models.
+            </p>
+          </div>
+          <button class="open-spec-btn text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="reverse">
+            <span>Explore Service</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 5: Dimensional Inspection Services -->
+        <div class="service-card metrology-panel metrology-panel-hover p-6 flex flex-col justify-between" data-category="inspection">
+          <div>
+            <div class="h-20 w-full mb-5 rounded-lg bg-black/50 border border-slate-800 p-2 flex flex-col items-center justify-center gap-1 font-mono">
+              <div class="text-[8px] text-slate-400 uppercase tracking-wider">ASME Y14.5 FEATURE CONTROL</div>
+              <div class="gdt-frame text-white text-[9px]">
+                <div class="gdt-cell text-blue-400 text-xs">⌖</div>
+                <div class="gdt-cell">Ø 0.025 Ⓜ</div>
+                <div class="gdt-cell">A</div>
+                <div class="gdt-cell">B Ⓜ</div>
+                <div class="gdt-cell">C</div>
+              </div>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Dimensional Inspection</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-sans font-normal">
+              Complete quality assurance verification delivering First Article Inspection Reports (FAIR AS9102), PPAP packages, and Gauge R&amp;R studies.
+            </p>
+          </div>
+          <button class="open-spec-btn text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="dimensional">
+            <span>Explore Service</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Service 6: CMM Programming Consultancy -->
+        <div class="service-card metrology-panel metrology-panel-hover p-6 flex flex-col justify-between" data-category="programming">
+          <div>
+            <div class="h-20 w-full mb-5 rounded-lg bg-black/40 border border-slate-800 flex items-center justify-center p-2 overflow-hidden">
+              <svg class="w-full h-full text-blue-500" viewBox="0 0 200 60" fill="none">
+                <line x1="15" y1="15" x2="185" y2="15" stroke="#0052FF" stroke-width="1" stroke-dasharray="3,3"/>
+                <text x="20" y="12" fill="#0052FF" font-family="JetBrains Mono" font-size="7">+Z CLEARANCE PLANE</text>
+                <rect x="75" y="32" width="50" height="20" stroke="#64748B" stroke-width="1.2" fill="rgba(15, 29, 56, 0.4)"/>
+                <path d="M 25,15 L 55,15 L 68,26 L 75,32" stroke="#10B981" stroke-width="1.5"/>
+                <circle cx="75" cy="32" r="2.5" fill="#DC2626"/>
+                <text x="42" y="55" fill="#64748B" font-family="JetBrains Mono" font-size="8">COLLISION AVOIDANCE PATH</text>
+              </svg>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">CMM Programming Support</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-sans font-normal">
+              Turnkey DCC offline scripting, probe angle indexing, and program debugging reducing measurement cycle times up to 40%.
+            </p>
+          </div>
+          <button class="open-spec-btn text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="consultancy">
+            <span>Explore Service</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Service 7: Fixture Tooling (Clean Wide Block) -->
+      <div class="mt-6 metrology-panel p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-slate-800">
+        <div>
+          <h3 class="font-heading text-lg font-bold text-white mb-1">2D &amp; 3D CAD Design &amp; Modular Fixturing</h3>
+          <p class="text-slate-300 text-sm max-w-2xl font-sans font-normal">
+            Specialized holding fixtures engineered for kinematic repeatability and CMM probe access without obstructing critical features.
+          </p>
+        </div>
+        <button class="open-spec-btn shrink-0 text-sm font-heading font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5 transition-colors" data-service-key="cad">
+          <span>Explore Fixture Design</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. INTERACTIVE 3D CMM & LASER SCAN SIMULATOR (Focused Experience) -->
+  <section id="simulation" class="py-24 border-t border-b border-slate-800 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <!-- Simulator Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
+        <div class="max-w-2xl">
+          <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
+            INTERACTIVE DEMONSTRATION
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3">
+            Measure It. Scan It. Understand It.
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-sans">
+            Real-time tactile ruby probing and high-density blue laser optical scanning simulation.
+          </p>
+        </div>
+
+        <!-- Mode Buttons & Controls (Clean Pill Group) -->
+        <div class="flex items-center gap-2">
+          <button id="simModeProbe" class="px-4 py-2 rounded-lg font-mono text-xs font-bold bg-blue-600 text-white transition-all" aria-label="Switch to CMM Probe Mode">
+            Probe Mode
+          </button>
+          <button id="simModeScan" class="px-4 py-2 rounded-lg font-mono text-xs font-bold text-slate-400 hover:text-white border border-slate-800 transition-all" aria-label="Switch to Laser Scan Mode">
+            Laser Scan
+          </button>
+          <button id="toggleHeatmapBtn" class="px-3 py-2 rounded-lg font-mono text-xs text-slate-400 hover:text-white border border-slate-800 transition-all" title="Toggle Deviation Colormap">
+            Heatmap
+          </button>
+          <button id="autoRunRoutineBtn" class="px-3 py-2 rounded-lg font-mono text-xs text-slate-400 hover:text-white border border-slate-800 transition-all" title="Run 6-Hole PCD Routine">
+            Auto Demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Canvas Viewport (Clean, Uncluttered, Large Stage) -->
+      <div class="metrology-panel p-4 border border-slate-800 relative">
+        <div class="flex justify-between items-center text-xs font-mono text-slate-400 mb-2 px-1">
+          <span id="canvasModeTitle">CMM TACTILE TOUCH PROBE (RUBY STYLUS 4mm)</span>
+          <span id="simStatusText" class="text-blue-400">Click part to record CMM point</span>
+        </div>
+
+        <div class="h-[440px] rounded-lg bg-black/90 overflow-hidden relative">
+          <canvas id="simCanvas" class="w-full h-full cursor-crosshair"></canvas>
+        </div>
+
+        <!-- Clean DRO Display Strip (Section 25) -->
+        <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+          <div class="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
+            <span class="text-[10px] text-slate-400 block uppercase font-mono tracking-wide">X Coordinate</span>
+            <span id="droX" class="text-base sm:text-lg font-bold text-white">+000.000 mm</span>
+          </div>
+          <div class="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
+            <span class="text-[10px] text-slate-400 block uppercase font-mono tracking-wide">Y Coordinate</span>
+            <span id="droY" class="text-base sm:text-lg font-bold text-white">+000.000 mm</span>
+          </div>
+          <div class="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
+            <span class="text-[10px] text-slate-400 block uppercase font-mono tracking-wide">Z Height</span>
+            <span id="droZ" class="text-base sm:text-lg font-bold text-white">+000.000 mm</span>
+          </div>
+          <div class="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
+            <span class="text-[10px] text-slate-400 block uppercase font-mono tracking-wide">Micro-Deviation</span>
+            <span id="droDev" class="text-base sm:text-lg font-bold text-emerald-400">+0.000 mm</span>
+          </div>
+        </div>
+
+        <!-- Compact Bottom Line: Points & Clear Action -->
+        <div class="mt-3.5 flex items-center justify-between text-xs font-mono text-slate-400 px-1">
+          <div>
+            POINTS: <span id="simPointCount" class="text-white font-bold">0</span> | <span id="laserScanStats">SCAN: 0%</span>
+          </div>
+          <button id="clearSimPointsBtn" class="text-red-400 hover:text-red-300 transition-colors font-medium">
+            Reset Data
+          </button>
+        </div>
+      </div>
+
+      <!-- Legal Metrology Disclaimer -->
+      <div class="mt-3 text-xs font-mono text-slate-500 text-center">
+        *Interactive Metrology Demonstration — Simulated measurement data for engineering illustration.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. SOFTWARE & TOOLS SHOWCASE -->
+  <section id="software" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="max-w-2xl mb-12">
+        <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
+          ENGINEERING PLATFORMS
+        </div>
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3">
+          Built Around Industry-Standard Tools
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed font-sans">
+          Industry-standard CMM offline programming and 3D optical inspection software.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        
+        <!-- Software 1: PC-DMIS -->
+        <div class="metrology-panel p-6 sm:p-8 border border-slate-800">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <h3 class="font-heading text-xl font-bold text-white">PC-DMIS CAD++</h3>
+            <span class="text-[10px] font-mono text-blue-400 font-semibold px-2 py-0.5 rounded bg-blue-500/10">DCC OFFLINE</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal font-sans">
+            Creation and optimization of collision-free offline measurement scripts for Hexagon bridge CMMs before machine loading.
+          </p>
+          <div class="space-y-2 text-xs font-mono text-slate-300">
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">01. Iterative 3-2-1 CAD Datum Alignment</div>
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">02. Collision-Free DCC Probe Path Simulation</div>
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">03. PH10M / PH20 Multi-Probe Cluster Indexing</div>
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">04. Automated Pass/Fail Loop Routines &amp; Excel Export</div>
+          </div>
+        </div>
+
+        <!-- Software 2: PolyWorks -->
+        <div class="metrology-panel p-6 sm:p-8 border border-slate-800">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <h3 class="font-heading text-xl font-bold text-white">PolyWorks|Inspector™</h3>
+            <span class="text-[10px] font-mono text-blue-400 font-semibold px-2 py-0.5 rounded bg-blue-500/10">SCAN-TO-CAD</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal font-sans">
+            Universal 3D metrology platform for point cloud alignments, color deviation maps, and complex freeform surface inspections.
+          </p>
+          <div class="space-y-2 text-xs font-mono text-slate-300">
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">01. High-Density Optical Point Cloud Capture</div>
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">02. Best-Fit Surface-to-CAD Cross-Section Alignment</div>
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">03. 3D Color Deviation Heatmap Rendering</div>
+            <div class="p-2.5 rounded bg-slate-900/60 border border-slate-800">04. Dimensional AS9102 &amp; SPC Trend Reporting</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feature Comparison Table -->
+      <div class="metrology-panel p-6 border border-slate-800">
+        <h3 class="font-heading text-lg font-bold text-white mb-4">Engineering Advantage</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left font-mono text-xs">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400">
+                <th class="pb-2.5">PARAMETER</th>
+                <th class="pb-2.5 text-white">PROFLIC TECHNOLOGIES</th>
+                <th class="pb-2.5 text-slate-500">CONVENTIONAL IN-HOUSE</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+              <tr>
+                <td class="py-2.5 font-medium text-white">Accuracy</td>
+                <td class="py-2.5 text-blue-400">Sub-micron calibrated ruby probe &amp; laser optical scanning</td>
+                <td class="py-2.5 text-slate-500">Dependent on calibration age</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 font-medium text-white">Turnaround</td>
+                <td class="py-2.5 text-blue-400">24–48 Hour rapid dispatch &amp; offline DCC coding</td>
+                <td class="py-2.5 text-slate-500">Weeks of backlog queue</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 font-medium text-white">Flexibility</td>
+                <td class="py-2.5 text-blue-400">PC-DMIS, PolyWorks, SolidWorks, Siemens NX</td>
+                <td class="py-2.5 text-slate-500">Single software vendor lock-in</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. METROLOGY QUOTE ESTIMATOR & INQUIRY FORM (Connected) -->
+  <section id="estimator" class="py-24 border-t border-slate-800 bg-slate-900/20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Clean Step-Based Estimator (Section 27) -->
+        <div class="lg:col-span-5 metrology-panel p-6 sm:p-8 border border-slate-800">
+          <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
+            QUOTE ESTIMATOR
+          </div>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-white mb-6">
+            Configure Your Project
+          </h2>
+
+          <form id="calcForm" class="space-y-4" onsubmit="event.preventDefault();">
+            <div>
+              <label for="calcService" class="block text-xs font-sans font-semibold text-slate-300 mb-1.5 tracking-wide uppercase">01 Service Category</label>
+              <select id="calcService" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+                <option value="onsite">On-Site CMM Inspection (Portable Arm)</option>
+                <option value="scanning" selected>3D Scanning &amp; Surface Deviation</option>
+                <option value="programming">CMM Programming (DCC Offline)</option>
+                <option value="reverse">Reverse Engineering &amp; CAD</option>
+                <option value="cad">2D &amp; 3D CAD Design / Fixturing</option>
+                <option value="training">CMM Programming Training Session</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label for="calcComplexity" class="block text-xs font-sans font-semibold text-slate-300 mb-1.5 tracking-wide uppercase">02 Complexity</label>
+                <select id="calcComplexity" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+                  <option value="basic">Basic Geometric</option>
+                  <option value="medium" selected>Medium Machined</option>
+                  <option value="high">Turbine / Die</option>
+                </select>
+              </div>
+              <div>
+                <label for="calcQuantity" class="block text-xs font-sans font-semibold text-slate-300 mb-1.5 tracking-wide uppercase">03 Quantity</label>
+                <input type="number" id="calcQuantity" value="1" min="1" max="500" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-sans font-semibold text-slate-300 mb-1.5 tracking-wide uppercase">04 Platform</label>
+              <div class="grid grid-cols-3 gap-2">
+                <label class="flex items-center gap-1.5 p-2 rounded-lg bg-slate-900 border border-slate-800 cursor-pointer">
+                  <input type="radio" name="calcSoftware" value="PC-DMIS" checked class="text-blue-600">
+                  <span class="text-xs font-mono text-slate-300">PC-DMIS</span>
+                </label>
+                <label class="flex items-center gap-1.5 p-2 rounded-lg bg-slate-900 border border-slate-800 cursor-pointer">
+                  <input type="radio" name="calcSoftware" value="PolyWorks" class="text-blue-600">
+                  <span class="text-xs font-mono text-slate-300">PolyWorks</span>
+                </label>
+                <label class="flex items-center gap-1.5 p-2 rounded-lg bg-slate-900 border border-slate-800 cursor-pointer">
+                  <input type="radio" name="calcSoftware" value="N/A" class="text-blue-600">
+                  <span class="text-xs font-mono text-slate-300">N/A</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Result Box -->
+            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-2 font-mono text-xs">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400 text-[11px]">INDICATIVE TURNAROUND:</span>
+                <span id="calcResultTurnaround" class="font-bold text-white text-xs sm:text-sm">24–48 Hours</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400 text-[11px]">METROLOGY RATING:</span>
+                <span id="calcResultRating" class="text-blue-400 font-semibold text-[11px]">SURFACE DEVIATION</span>
+              </div>
+            </div>
+
+            <div class="text-[10px] font-mono text-slate-500 italic">
+              *Indicative estimate — final timeline depends on engineering review.
+            </div>
+
+            <button type="button" id="calcTransferBtn" class="w-full py-3.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-heading font-semibold text-sm transition-all flex items-center justify-center gap-2">
+              <span>Transfer to Inquiry Form</span>
+              <i class="fa-solid fa-arrow-down-long text-xs"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Engineering Inquiry Form & Direct Contact Details -->
+        <div id="contact" class="lg:col-span-7 metrology-panel p-6 sm:p-8 border border-slate-800 scroll-mt-24">
+          <div class="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
+            ENGINEERING INQUIRY
+          </div>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-white mb-2">
+            Have a Measurement Challenge?
+          </h2>
+          <p class="text-slate-400 text-sm mb-6 font-sans">
+            Talk directly with the PROFLIC engineering team. Submit drawing details or request mobile on-site dispatch.
+          </p>
+
+          <!-- Contact Coordinates -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 font-mono text-xs">
+            <a href="tel:+918459706344" class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors flex items-center gap-3">
+              <i class="fa-solid fa-phone text-blue-500 text-sm"></i>
+              <div>
+                <span class="text-[10px] text-slate-400 block font-semibold tracking-wider">CALL ENGINEERING</span>
+                <span class="text-white font-bold text-sm">+91 84597 06344</span>
+              </div>
+            </a>
+            <a href="mailto:proflic.tech@gmail.com" class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-blue-500 text-sm"></i>
+              <div>
+                <span class="text-[10px] text-slate-400 block font-semibold tracking-wider">EMAIL INQUIRIES</span>
+                <span class="text-white font-bold text-sm">proflic.tech@gmail.com</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Formal Form -->
+          <form id="inquiryForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label for="formName" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Full Name *</label>
+                <input type="text" id="formName" required placeholder="John Doe" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-sans focus:border-blue-500 focus:outline-none">
+              </div>
+              <div>
+                <label for="formCompany" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Company *</label>
+                <input type="text" id="formCompany" required placeholder="Precision Mfg Inc." class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-sans focus:border-blue-500 focus:outline-none">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label for="formEmail" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Email Address *</label>
+                <input type="email" id="formEmail" required placeholder="engineer@company.com" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-sans focus:border-blue-500 focus:outline-none">
+              </div>
+              <div>
+                <label for="formPhone" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Phone Number</label>
+                <input type="tel" id="formPhone" placeholder="+91 XXXXX XXXXX" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-sans focus:border-blue-500 focus:outline-none">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <div>
+                <label for="formService" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Service</label>
+                <select id="formService" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+                  <option value="onsite">On-Site CMM</option>
+                  <option value="scanning" selected>3D Scanning</option>
+                  <option value="programming">CMM Scripting</option>
+                  <option value="reverse">Reverse Eng</option>
+                  <option value="cad">CAD Design</option>
+                  <option value="training">Training</option>
+                </select>
+              </div>
+              <div>
+                <label for="formComplexity" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Complexity</label>
+                <select id="formComplexity" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+                  <option value="basic">Basic</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">Turbine/Die</option>
+                </select>
+              </div>
+              <div>
+                <label for="formQuantity" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Qty</label>
+                <input type="number" id="formQuantity" value="1" min="1" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+              </div>
+              <div>
+                <label for="formSoftware" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Platform</label>
+                <input type="text" id="formSoftware" value="PC-DMIS" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-mono focus:border-blue-500 focus:outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label for="formMessage" class="block text-xs font-sans font-semibold text-slate-300 mb-1 tracking-wide uppercase">Project Details / Tolerance Specifications *</label>
+              <textarea id="formMessage" rows="3" required placeholder="Describe requirements, blueprint tolerances (e.g. ASME Y14.5), CAD format, or location for on-site dispatch..." class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-xs text-white font-sans focus:border-blue-500 focus:outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-heading font-semibold text-sm transition-all shadow-sm">
+              Request Engineering Quote
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. FINAL CALL TO ACTION (Spacious, Elegant) -->
+  <section id="final-cta" class="py-24 text-center">
+    <div class="max-w-3xl mx-auto px-6 lg:px-12">
+      <h2 class="font-heading text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">
+        Every Micron Matters.
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg mb-8 font-sans font-normal leading-relaxed">
+        From CAD to CMM, scanning to inspection — PROFLIC Technologies helps you measure with confidence.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-lg font-heading font-semibold text-sm text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-sm">
+          Request a Quote
+        </a>
+        <a href="#services" class="w-full sm:w-auto px-7 py-3.5 rounded-lg font-heading font-medium text-sm text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-all">
+          Explore Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FOOTER (Clean, Open, Standard Information) -->
+  <footer class="border-t border-slate-800 py-14">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+        
+        <!-- Col 1: Brand & Slogan -->
+        <div class="lg:col-span-5">
+          <img src="assets/logo.png" alt="PROFLIC Technologies" class="h-9 w-auto object-contain mb-4">
+          <p class="text-xs font-mono text-blue-500 mb-2 font-semibold">TRUSTED IN EVERY MEASUREMENT</p>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm font-sans mb-4">
+            We reveal the invisible, measured everything in microns. CMM programming, 3D laser scanning, and dimensional inspection.
+          </p>
+          <div class="text-xs font-mono text-slate-500">
+            Rapid Mobile Dispatch: 24/7 Available
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="lg:col-span-2">
+          <div class="font-heading text-xs font-bold text-white uppercase tracking-wider mb-3">Navigation</div>
+          <ul class="space-y-2.5 text-sm font-sans text-slate-400">
+            <li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#simulation" class="hover:text-white transition-colors">3D Scanner</a></li>
+            <li><a href="#software" class="hover:text-white transition-colors">Software</a></li>
+            <li><a href="#estimator" class="hover:text-white transition-colors">Calculator</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="lg:col-span-2">
+          <div class="font-heading text-xs font-bold text-white uppercase tracking-wider mb-3">Services</div>
+          <ul class="space-y-2.5 text-sm font-sans text-slate-400">
+            <li>• On-Site CMM</li>
+            <li>• 3D Scanning</li>
+            <li>• CMM Training</li>
+            <li>• Reverse Eng</li>
+            <li>• Inspection / FAIR</li>
+            <li>• CAD Fixturing</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Frameworks -->
+        <div class="lg:col-span-3">
+          <div class="font-heading text-xs font-bold text-white uppercase tracking-wider mb-3">Contact</div>
+          <div class="space-y-2 text-sm font-sans text-slate-300 mb-4">
+            <div>
+              <a href="tel:+918459706344" class="hover:text-blue-400 transition-colors">+91 84597 06344</a>
+            </div>
+            <div>
+              <a href="mailto:proflic.tech@gmail.com" class="hover:text-blue-400 transition-colors">proflic.tech@gmail.com</a>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">ASME Y14.5</span>
+            <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">ISO 17025</span>
+            <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">ISO 1101</span>
+            <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800">GD&amp;T</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs font-sans text-slate-500 gap-2">
+        <div>© <span id="currentYear"></span> PROFLIC Technologies. All Rights Reserved.</div>
+        <div class="text-[11px] text-slate-500">Standards presented reflect engineering frameworks supported in client workflows.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 12. TECHNICAL SERVICE DETAIL MODAL (Progressive Disclosure) -->
+  <div id="serviceDetailModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div id="modalBackdrop" class="absolute inset-0"></div>
+
+    <div class="metrology-panel max-w-xl w-full p-6 sm:p-8 border border-slate-700 relative z-10 max-h-[90vh] overflow-y-auto">
+      <button id="modalCloseBtn" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 text-base focus:outline-none" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-[11px] font-mono text-blue-400 uppercase tracking-wider mb-1 font-semibold" id="modalCategory">Shop-Floor Metrology</div>
+      <h3 id="modalTitle" class="font-heading text-2xl font-bold text-white mb-4">Service Details</h3>
+
+      <div class="space-y-4 font-mono text-xs mb-6">
+        <p id="modalOverview" class="text-slate-300 leading-relaxed font-sans text-sm sm:text-base"></p>
+
+        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-[10px] text-slate-400 uppercase font-semibold tracking-wider">EQUIPMENT &amp; OPTICS:</div>
+          <div id="modalEquipment" class="text-white font-semibold mt-0.5"></div>
+        </div>
+
+        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-[10px] text-slate-400 uppercase font-semibold tracking-wider">SUPPORTED STANDARDS:</div>
+          <div id="modalStandards" class="text-white font-semibold mt-0.5"></div>
+        </div>
+
+        <div>
+          <div class="text-[10px] text-slate-400 uppercase mb-2 font-semibold tracking-wider">KEY CAPABILITIES:</div>
+          <ul id="modalCapabilities" class="space-y-2 text-slate-300"></ul>
+        </div>
+
+        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-[10px] text-slate-400 uppercase font-semibold tracking-wider">DELIVERABLES:</div>
+          <div id="modalDeliverables" class="text-emerald-400 font-semibold mt-0.5"></div>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-3 pt-3 border-t border-slate-800">
+        <button onclick="proflicApp.closeModal()" class="px-4 py-2 rounded-lg font-heading font-medium text-sm text-slate-400 hover:text-white transition-colors">
+          Close
+        </button>
+        <button id="modalQuoteBtn" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-heading font-semibold text-sm transition-all">
+          Request Quote for This Service
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 13. CONFIRMATION TOAST NOTIFICATION -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 metrology-panel border border-slate-700 p-4 shadow-xl hidden items-start gap-3 max-w-sm bg-slate-900" role="alert">
+    <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-xl shrink-0 mt-0.5"></i>
+    <div class="font-mono text-xs">
+      <div id="toastTitle" class="font-bold text-white text-sm mb-0.5">Inquiry Registered</div>
+      <div id="toastDesc" class="text-slate-300 leading-relaxed">Our Metrology Engineering team will review your specifications.</div>
+      <div class="mt-1 text-[10px] text-blue-400" id="toastRefId"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules in Logical Sequence -->
+  <script src="js/theme.js"></script>
+  <script src="js/hero-canvas.js"></script>
+  <script src="js/scanner.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
