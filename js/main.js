@@ -268,11 +268,19 @@
       const name = document.getElementById('formName');
       const company = document.getElementById('formCompany');
       const email = document.getElementById('formEmail');
+      const phone = document.getElementById('formPhone');
+      const serviceSelect = document.getElementById('formService');
+      const complexitySelect = document.getElementById('formComplexity');
+      const quantity = document.getElementById('formQuantity');
+      const software = document.getElementById('formSoftware');
       const message = document.getElementById('formMessage');
+
+      const formStatus = document.getElementById('formStatus');
+      const formStatusMailLink = document.getElementById('formStatusMailLink');
 
       let isValid = true;
 
-      // Validation
+      // 1. Required Fields Validation
       [name, company, email, message].forEach(field => {
         if (!field || !field.value.trim()) {
           if (field) {
@@ -293,13 +301,77 @@
         return;
       }
 
-      // Generate Reference ID
+      // 2. Email Format Validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) {
+        email.classList.add('border-red-500');
+        email.classList.remove('border-slate-800');
+        showToast('Invalid Email', 'Please enter a valid email address.', false);
+        return;
+      }
+
+      // 3. Extract Form Values
+      const nameVal = name.value.trim();
+      const companyVal = company.value.trim();
+      const emailVal = email.value.trim();
+      const phoneVal = (phone && phone.value.trim()) ? phone.value.trim() : 'Not Provided';
+      const serviceVal = (serviceSelect && serviceSelect.selectedIndex >= 0) 
+        ? serviceSelect.options[serviceSelect.selectedIndex].text 
+        : 'N/A';
+      const complexityVal = (complexitySelect && complexitySelect.selectedIndex >= 0) 
+        ? complexitySelect.options[complexitySelect.selectedIndex].text 
+        : 'N/A';
+      const qtyVal = (quantity && quantity.value) ? quantity.value : '1';
+      const platformVal = (software && software.value.trim()) ? software.value.trim() : 'PC-DMIS';
+      const detailsVal = message.value.trim();
+
+      // 4. Construct Email Body according to specification
+      const emailBody = `PROFLIC TECHNOLOGIES
+ENGINEERING INQUIRY
+
+CONTACT DETAILS
+Name: ${nameVal}
+Company: ${companyVal}
+Email: ${emailVal}
+Phone: ${phoneVal}
+
+PROJECT REQUIREMENTS
+Service: ${serviceVal}
+Complexity: ${complexityVal}
+Quantity: ${qtyVal}
+Platform: ${platformVal}
+
+PROJECT DETAILS / TOLERANCE SPECIFICATIONS
+${detailsVal}`;
+
+      // 5. Build and URL-encode mailto Link
+      const recipient = 'proflic.tech@gmail.com';
+      const subject = 'Engineering Inquiry — PROFLIC Technologies';
+      const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+      // 6. Attempt to Open Mail Client
+      try {
+        const mailtoAnchor = document.createElement('a');
+        mailtoAnchor.href = mailtoUrl;
+        document.body.appendChild(mailtoAnchor);
+        mailtoAnchor.click();
+        document.body.removeChild(mailtoAnchor);
+      } catch (err) {
+        window.location.href = mailtoUrl;
+      }
+
+      // 7. Display Confirmation & Fallback State in Form UI
+      if (formStatus) {
+        formStatus.classList.remove('hidden');
+        if (formStatusMailLink) {
+          formStatusMailLink.href = mailtoUrl;
+        }
+      }
+
+      // 8. Visual Toast Feedback (Reference tracking)
       const refId = `PRF-${Math.floor(1000 + Math.random() * 9000)}-${new Date().getFullYear()}`;
       if (toastRefId) toastRefId.textContent = refId;
-
-      showToast('Technical Inquiry Registered', `Reference #${refId}. Our Metrology Engineering team will review your specifications and contact you shortly.`, true);
-
-      inquiryForm.reset();
+      showToast('Inquiry Prepared', 'Your inquiry has been prepared in your email app. Please review and send it to PROFLIC Technologies.', true);
     });
   }
 
