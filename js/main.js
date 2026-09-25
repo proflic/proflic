@@ -322,7 +322,9 @@
         ? complexitySelect.options[complexitySelect.selectedIndex].text 
         : 'N/A';
       const qtyVal = (quantity && quantity.value) ? quantity.value : '1';
-      const platformVal = (software && software.value.trim()) ? software.value.trim() : 'PC-DMIS';
+      const platformVal = (software && software.selectedIndex >= 0) 
+        ? software.options[software.selectedIndex].text 
+        : (software && software.value.trim() ? software.value.trim() : 'PC-DMIS');
       const detailsVal = message.value.trim();
 
       // 4. Construct Email Body according to specification
@@ -365,6 +367,47 @@ ${detailsVal}`;
         formStatus.classList.remove('hidden');
         if (formStatusMailLink) {
           formStatusMailLink.href = mailtoUrl;
+        }
+
+        // Direct Webmail & Messaging Fallbacks
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+        const whatsappUrl = `https://wa.me/918459706344?text=${encodeURIComponent(`*PROFLIC Engineering Inquiry*\n\n${emailBody}`)}`;
+
+        const gmailLink = document.getElementById('formStatusGmailLink');
+        const whatsappLink = document.getElementById('formStatusWhatsAppLink');
+        const copyBtn = document.getElementById('formCopyDataBtn');
+        const copyText = document.getElementById('formCopyDataText');
+
+        if (gmailLink) gmailLink.href = gmailUrl;
+        if (whatsappLink) whatsappLink.href = whatsappUrl;
+
+        if (copyBtn) {
+          const clipboardContent = `To: ${recipient}
+Subject: ${subject}
+
+${emailBody}`;
+
+          copyBtn.onclick = async () => {
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(clipboardContent);
+              } else {
+                const ta = document.createElement('textarea');
+                ta.value = clipboardContent;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+              }
+              if (copyText) copyText.textContent = 'Copied to Clipboard!';
+              showToast('Ready to Direct Paste!', 'Inquiry copied. Press Ctrl + V to paste directly into Gmail, WhatsApp, or any app.', true);
+              setTimeout(() => {
+                if (copyText) copyText.textContent = 'Copy Details';
+              }, 3000);
+            } catch (copyErr) {
+              showToast('Copy Failed', 'Please manually select and copy your text.', false);
+            }
+          };
         }
       }
 
