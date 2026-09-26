@@ -4,47 +4,42 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/services/:slug*",
-        destination: "/#services",
-        permanent: true,
-      },
-      {
-        source: "/services",
-        destination: "/#services",
-        permanent: true,
-      },
-      {
-        source: "/quote",
-        destination: "/#estimator",
-        permanent: true,
-      },
-      {
-        source: "/contact",
-        destination: "/#estimator",
-        permanent: true,
-      },
-      {
-        source: "/about",
-        destination: "/#about",
-        permanent: true,
-      },
-      {
-        source: "/simulation",
-        destination: "/#simulation",
-        permanent: true,
-      },
-      {
-        source: "/software",
-        destination: "/#software",
-        permanent: true,
-      },
-      {
-        source: "/home",
+        source: "/services/:path*",
         destination: "/",
         permanent: true,
       },
       {
-        source: "/index.html",
+        source: "/services",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/quote",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/contact",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/about",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/simulation",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/software",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/home",
         destination: "/",
         permanent: true,
       },
