@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
           >
             <Image
               src="/assets/logo.png"
-              alt="Proflic Technologies Logo"
+              alt="PROFLIC Technologies Logo - Industrial Metrology & CMM Inspection"
               width={160}
               height={36}
               priority

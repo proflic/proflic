@@ -17,13 +17,13 @@ export const AboutBento: React.FC = () => {
             </h2>
             <p className="text-[var(--text-muted)] text-base leading-relaxed mb-6 font-normal font-sans">
               <strong className="text-[var(--text-main)] font-semibold">PROFLIC Technologies</strong> is an
-              advanced industrial metrology and precision quality engineering firm. We bridge the
-              gap between physical manufacturing and digital CAD data using coordinate measuring
-              machines, high-speed 3D laser scanners, and dedicated offline programming software.
+              advanced industrial metrology and precision quality engineering firm based in Chhatrapati Sambhajinagar,
+              Maharashtra, India. We bridge the gap between physical manufacturing and digital CAD data using coordinate
+              measuring machines, high-speed 3D laser scanners, and dedicated offline programming software.
             </p>
             <p className="text-[var(--text-muted)] text-sm sm:text-base leading-relaxed mb-8 font-sans">
-              Whether verifying critical aerospace castings, automotive dies, or medical
-              components, our engineers deliver actionable GD&amp;T inspection reports and turnkey
+              Whether verifying critical aerospace castings, automotive dies, sheet metal stampings, or precision machined
+              components, our engineers deliver actionable ASME Y14.5 GD&amp;T inspection reports, certified AS9102 FAIR packages, and turnkey
               offline CMM routines in <span className="text-[var(--text-main)] font-medium">PC-DMIS</span> and{" "}
               <span className="text-[var(--text-main)] font-medium">PolyWorks</span>.
             </p>

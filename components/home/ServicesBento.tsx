@@ -161,14 +161,14 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onSelectServiceFor
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
             <div className="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-blue-500 dark:text-blue-400 uppercase mb-2">
-              PRECISION SERVICES
+              PRECISION METROLOGY &amp; INSPECTION
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text-main)] mb-3">
-              Engineering Capabilities &amp; Services
+              CMM Inspection &amp; Metrology Services
             </h2>
             <p className="text-[var(--text-muted)] text-sm sm:text-base leading-relaxed font-sans">
-              Turnkey shop-floor inspection, high-speed 3D blue-laser scanning, and CMM programming
-              support.
+              Turnkey on-site CMM inspection, high-speed 3D blue-laser scanning, scan-to-CAD reverse engineering,
+              and offline CMM programming support across Maharashtra.
             </p>
           </div>
 

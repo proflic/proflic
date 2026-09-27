@@ -32,8 +32,54 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.proflic.in/"),
   title: siteMetadata.title,
   description: siteMetadata.description,
-  authors: [{ name: siteMetadata.author }],
-  robots: "index, follow",
+  applicationName: siteMetadata.siteName,
+  authors: [{ name: siteMetadata.author, url: "https://www.proflic.in/" }],
+  creator: siteMetadata.author,
+  publisher: siteMetadata.author,
+  keywords: [
+    "PROFLIC Technologies",
+    "PROFLIC",
+    "PROFLIC Metrology",
+    "PROFLIC Technologies Maharashtra",
+    "PROFLIC Technologies Chhatrapati Sambhajinagar",
+    "CMM Inspection Services",
+    "Portable CMM Inspection",
+    "CMM Inspection Maharashtra",
+    "CMM Inspection Chhatrapati Sambhajinagar",
+    "CMM Inspection Aurangabad",
+    "Coordinate Measuring Machine Inspection",
+    "3D Laser Scanning Services",
+    "Industrial 3D Laser Scanning",
+    "Blue Laser 3D Scanning",
+    "3D Laser Scanning Maharashtra",
+    "3D Laser Scanning Chhatrapati Sambhajinagar",
+    "Scan to CAD Reverse Engineering",
+    "Reverse Engineering Services",
+    "Point Cloud to CAD Conversion",
+    "Reverse Engineering Maharashtra",
+    "Offline CMM Programming",
+    "PC-DMIS Programming",
+    "PolyWorks Metrology Inspection",
+    "Dimensional Inspection Services",
+    "First Article Inspection AS9102",
+    "FAIR Inspection Report",
+    "PPAP Dimensional Documentation",
+    "ASME Y14.5 GD&T Inspection",
+    "2D Drafting 3D CAD Design",
+    "Industrial Metrology Training Maharashtra",
+    "Precision Metrology Services India"
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.proflic.in/",
   },
@@ -43,13 +89,13 @@ export const metadata: Metadata = {
     title: siteMetadata.title,
     description: siteMetadata.description,
     siteName: siteMetadata.siteName,
-    locale: "en_US",
+    locale: "en_IN",
     images: [
       {
-        url: "/assets/logo.png",
+        url: "https://www.proflic.in/assets/logo.png",
         width: 800,
         height: 600,
-        alt: "Proflic Technologies Logo",
+        alt: "PROFLIC Technologies - Industrial Metrology & Precision Inspection",
       },
     ],
   },
@@ -57,7 +103,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteMetadata.title,
     description: siteMetadata.description,
-    images: ["/assets/logo.png"],
+    images: ["https://www.proflic.in/assets/logo.png"],
   },
   icons: {
     icon: [
@@ -80,11 +126,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"

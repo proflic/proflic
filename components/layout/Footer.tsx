@@ -18,10 +18,10 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
           {/* Col 1: Brand & Slogan */}
           <div className="lg:col-span-5 space-y-4">
-            <a href="#hero" className="inline-block" aria-label="Proflic Technologies Home">
+            <a href="#hero" className="inline-block" aria-label="PROFLIC Technologies Home">
               <Image
                 src="/assets/logo.png"
-                alt="Proflic Technologies Logo"
+                alt="PROFLIC Technologies Logo - Trusted in Every Measurement"
                 width={160}
                 height={36}
                 className="h-9 w-auto object-contain"
@@ -34,8 +34,9 @@ export const Footer: React.FC = () => {
               </p>
             </div>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed max-w-sm font-sans">
-              We reveal the invisible, measure everything in microns. Onsite CMM inspection Service,
-              CMM programming support, 3D laser scanning, and dimensional inspection.
+              We reveal the invisible, measuring everything in microns. On-site CMM inspection,
+              CMM programming support, 3D laser scanning, and dimensional quality verification across
+              Chhatrapati Sambhajinagar and Maharashtra.
             </p>
             <div className="text-xs font-mono text-[var(--text-dim)] flex items-center gap-2 pt-1">
               <i className="fa-solid fa-clock text-blue-500 text-[11px]"></i>
@@ -107,7 +108,7 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <a
-                  href="https://www.proflic.in"
+                  href="https://www.proflic.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-500 transition-colors flex items-center gap-2 font-mono text-xs text-[var(--text-muted)]"
