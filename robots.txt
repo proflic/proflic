@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.proflic.in
+Sitemap: https://www.proflic.in/sitemap.xml

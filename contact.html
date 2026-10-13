@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; RFQ | PROFLIC Technologies | Chhatrapati Sambhajinagar</title>
+  <meta name="description" content="Talk directly with the PROFLIC Technologies engineering team. Submit drawing details or request mobile on-site CMM dispatch across Maharashtra.">
+  <link rel="canonical" href="https://www.proflic.in/contact">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.proflic.in/contact">
+  <meta property="og:title" content="Contact &amp; RFQ | PROFLIC Technologies">
+  <meta property="og:description" content="Submit 2D drawings or 3D CAD files for rapid CMM inspection or on-site laser scanning quotes. Phone: +91 84597 06344.">
+  <meta property="og:image" content="https://www.proflic.in/assets/hero_cmm.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Typography: Barlow Condensed 800 (Headings) + Outfit 400-600 (Body & UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="canvas-grid">
+
+  <!-- ==========================================================================
+       SITE HEADER
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-anchor" aria-label="PROFLIC Technologies Home">
+        <img src="assets/logo.png" alt="PROFLIC Technologies" class="brand-logo-img" width="160" height="32">
+        <span class="brand-subtext">METROLOGY &amp; 3D QA</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <a href="tel:+918459706344" class="header-phone-link" title="Call PROFLIC Engineering Desk">
+          <span class="status-dot"></span>
+          <span>+91 84597 06344</span>
+        </a>
+        <a href="#rfqForm" class="btn btn-primary btn-sm">Request a Quote →</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About PROFLIC</a>
+      <a href="services.html">Services &amp; Capabilities</a>
+      <a href="contact.html" class="active">Contact &amp; RFQ</a>
+      <div style="padding-top: 8px; display: flex; flex-direction: column; gap: 8px;">
+        <a href="tel:+918459706344" style="color: var(--color-cobalt); font-family: var(--font-mono); font-size: 13px;">📞 Call: +91 84597 06344</a>
+        <a href="https://wa.me/918459706344" target="_blank" rel="noopener" style="color: var(--color-emerald); font-family: var(--font-mono); font-size: 13px;">💬 WhatsApp Dispatch</a>
+      </div>
+    </div>
+    <div class="header-scroll-progress" id="headerScrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- Header Stage -->
+    <section class="section page-header-stage">
+      <div class="container">
+        <div class="section-eyebrow">
+          <span class="status-dot"></span>
+          <span>Engineering Desk</span>
+        </div>
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 4vw, 3.4rem); margin-bottom: 16px;">
+          Engineering Contact &amp; RFQ
+        </h1>
+        <p class="section-description" style="max-width: 660px;">
+          Direct engineering desk for rapid feasibility review, CAD quotation, and on-site CMM scheduling across Maharashtra.
+        </p>
+      </div>
+    </section>
+
+    <!-- RFQ Portal & Channels Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="rfq-layout-grid">
+          <!-- Form Card -->
+          <div class="rfq-form-card">
+            <div class="section-eyebrow">RFQ Submission Portal</div>
+            <h2 class="rfq-form-title">Request Quotation</h2>
+            <p class="rfq-form-sub">
+              Submit component specifications for engineering feasibility review.
+            </p>
+
+            <form id="rfqForm" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="rfqName">Contact Person Name <span class="form-label-required">*</span></label>
+                <input type="text" id="rfqName" name="name" class="form-control" placeholder="e.g. John Doe" required autocomplete="name">
+                <div class="field-error-msg">Please enter your name.</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="rfqCompany">Company &amp; Facility Location <span class="form-label-required">*</span></label>
+                <input type="text" id="rfqCompany" name="company" class="form-control" placeholder="e.g. Precision Components Ltd, Waluj MIDC" required autocomplete="organization">
+                <div class="field-error-msg">Please enter your company or plant name.</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="rfqPhone">Direct Telephone Number <span class="form-label-required">*</span></label>
+                <input type="tel" id="rfqPhone" name="phone" class="form-control" placeholder="+91 84597 06344" required autocomplete="tel">
+                <div class="field-error-msg">Please enter a valid telephone number (minimum 10 digits).</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="rfqService">Required Service Category <span class="form-label-required">*</span></label>
+                <select id="rfqService" name="service" class="form-control" required>
+                  <option value="On-Site Portable CMM Inspection (7-Axis Arm)">On-Site Portable CMM Inspection (7-Axis Arm)</option>
+                  <option value="3D Blue Laser Optical Scanning">3D Blue Laser Optical Scanning</option>
+                  <option value="Scan-to-CAD Reverse Engineering">Scan-to-CAD Reverse Engineering</option>
+                  <option value="Bridge CMM Laboratory Probing (< 0.001 mm)">Bridge CMM Laboratory Probing (&lt; 0.001 mm)</option>
+                  <option value="Offline CMM Programming (PC-DMIS / PolyWorks)">Offline CMM Programming (PC-DMIS / PolyWorks)</option>
+                  <option value="Quality Documentation (FAIR AS9102 / PPAP)">Quality Documentation (FAIR AS9102 / PPAP)</option>
+                </select>
+                <div class="field-error-msg">Please select a service category.</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="rfqMessage">Component Scope &amp; Tolerance Specifications <span class="form-label-required">*</span></label>
+                <textarea id="rfqMessage" name="message" class="form-control" placeholder="Part geometry, drawing tolerances (e.g. ASME Y14.5 ±0.01 mm), CAD availability, or on-site location..." required></textarea>
+                <div class="field-error-msg">Please provide basic component details (minimum 5 characters).</div>
+              </div>
+
+              <!-- Transparent Dual Submission Controls -->
+              <div class="rfq-actions-row">
+                <button type="button" id="btnSubmitWhatsApp" class="btn btn-primary">
+                  <span>Prepare WhatsApp RFQ →</span>
+                </button>
+                <button type="button" id="btnSubmitEmail" class="btn btn-secondary">
+                  <span>Draft Email RFQ</span>
+                </button>
+              </div>
+
+              <!-- Result Feedback Banner -->
+              <div id="formFeedback" class="rfq-result-banner" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- Direct Channels -->
+          <div class="rfq-direct-info">
+            <div class="contact-card-box">
+              <div class="contact-card-label">Direct Telephone Desk</div>
+              <a href="tel:+918459706344" class="contact-card-val">+91 84597 06344</a>
+              <p class="contact-card-desc">Urgent scheduling and technical queries.</p>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-label">Technical Email Desk</div>
+              <a href="mailto:proflic.tech@gmail.com" class="contact-card-val">proflic.tech@gmail.com</a>
+              <p class="contact-card-desc">Send 2D prints (.pdf) and 3D CAD (.step, .iges).</p>
+            </div>
+
+            <div class="contact-card-box" style="border-color: var(--color-emerald-border);">
+              <div class="contact-card-label" style="color: var(--color-emerald);">Instant WhatsApp Channel</div>
+              <a href="https://wa.me/918459706344" target="_blank" rel="noopener" class="contact-card-val" style="color: var(--color-emerald);">+91 84597 06344</a>
+              <p class="contact-card-desc">Fast channel for drawing photos and rapid coordination.</p>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-label">Metrology Laboratory Location</div>
+              <div style="font-size: 15px; font-weight: 700; color: var(--color-graphite); margin-top: 4px;">
+                Chhatrapati Sambhajinagar, Maharashtra, India
+              </div>
+              <p class="contact-card-desc">Serving industrial clusters across Maharashtra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer (Architectural Dark Graphite Anchor) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div>
+          <div class="footer-logo-badge">
+            <img src="assets/logo.png" alt="PROFLIC Technologies" width="130" height="26">
+          </div>
+          <div class="footer-brand-motto">
+            TRUSTED IN EVERY MEASUREMENT
+          </div>
+          <p class="footer-brand-desc">
+            Precision industrial metrology, on-site portable CMM inspection, 3D laser optical scanning, and quality engineering across Maharashtra.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About PROFLIC</a></li>
+            <li><a href="services.html">Services &amp; Capabilities</a></li>
+            <li><a href="contact.html">Contact &amp; RFQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-nav-list">
+            <li><a href="services.html#portable">On-Site Portable CMM</a></li>
+            <li><a href="services.html#laser">3D Laser Scanning</a></li>
+            <li><a href="services.html#reverse">Scan-to-CAD Engineering</a></li>
+            <li><a href="services.html#cmm">Bridge CMM Lab Probing</a></li>
+            <li><a href="services.html#programming">Offline CMM Scripting</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Direct Contact</div>
+          <ul class="footer-nav-list">
+            <li><a href="tel:+918459706344" class="font-mono" style="font-weight: 700; color: #FFFFFF;">📞 +91 84597 06344</a></li>
+            <li><a href="mailto:proflic.tech@gmail.com" class="font-mono" style="color: #CBD5E1;">✉️ proflic.tech@gmail.com</a></li>
+            <li><a href="https://wa.me/918459706344" target="_blank" rel="noopener" style="color: #34D399; font-weight: 600;">💬 WhatsApp Dispatch</a></li>
+            <li style="color: #64748B;">📍 Chhatrapati Sambhajinagar, MH</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 PROFLIC Technologies. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-meta">
+          Domain: proflic.in • Brand: Proflic
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

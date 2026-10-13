@@ -1,25 +1,11 @@
 {
-  "name": "proflic-next",
-  "version": "1.0.0",
+  "name": "proflic",
+  "version": "2.0.0",
+  "description": "Proflic — Precision Industrial Metrology, CMM Inspection & 3D Laser Scanning",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "^14.2.13",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.16.5",
-    "@types/react": "^18.3.8",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.11",
-    "typescript": "^5.6.2"
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 .",
+    "build": "node -e \"console.log('Proflic static site build ready')\""
   }
 }
